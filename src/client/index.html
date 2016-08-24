@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-class="app">
+  <head>
+
+
+    <style>.active { color: red; font-weight: bold; }</style>
+  </head>
+
+  <body>
+    Book-reader
+    <ui-view></ui-view>
+
+    <!-- build:js js/lib.js -->
+    <!-- bower:js -->
+    <script src="/libs/angular/angular.js"></script>
+    <script src="/libs/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/libs/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/app.js -->
+    <!-- inject:js -->
+    <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/core/core.module.js"></script>
+    <script src="/src/client/app/core/core.route.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

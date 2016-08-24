@@ -1,0 +1,28 @@
+{
+  "name": "book-reader",
+  "scripts": {
+  },
+  "env": {
+    "DOMAIN": {
+      "required": true
+    },
+    "DOORKEEPER_APP_ID": {
+      "required": true
+    },
+    "FRONTEND_VERSION": {
+      "required": true
+    }
+  },
+  "addons": [
+    "newrelic",
+    "papertrail"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-ruby"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
